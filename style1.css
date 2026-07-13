@@ -1,0 +1,293 @@
+/* Global Styles */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#f4f7fa;
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    background:linear-gradient(135deg,#0077b6,#00b4d8);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo h1{
+    color:white;
+    font-size:30px;
+}
+
+ul{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    list-style:none;
+}
+
+ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    transition:0.3s;
+}
+
+ul li a:hover{
+    color:aqua;
+}
+
+header button{
+    background:#ffd60a;
+    border:none;
+    padding:10px 18px;
+    border-radius:25px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+header button:hover{
+    background:white;
+}
+
+/* Hero Section */
+.hero-content{
+    text-align:center;
+    padding:50px 20px;
+    background:linear-gradient(rgba(0,0,0,.4),
+    rgba(0,0,0,.4)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.hero-content img{
+    border-radius:15px;
+    margin:20px 0;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+.hero-content button{
+    background:#ffb703;
+    border:none;
+    padding:12px 25px;
+    margin:10px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.hero-content button:hover{
+    background:#023e8a;
+    color:white;
+}
+
+/* Destination Cards */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    padding:40px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    padding:15px;
+    text-align:center;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    
+
+}
+
+.card h2,
+.card h3{
+    color:#0077b6;
+    margin:10px 0;
+}
+
+.card p{
+    margin:10px 0;
+}
+
+.card button{
+    background:#00b4d8;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:25px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.card button:hover{
+    background:#0077b6;
+}
+
+/* Package Section */
+.packages{
+    background:#eaf7ff;
+    padding:50px 20px;
+}
+
+.packages h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0077b6;
+}
+
+/* Table */
+table{
+    width:90%;
+    margin:30px auto;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+th{
+    background:#0077b6;
+    color:white;
+}
+
+th,td{
+    padding:15px;
+    text-align:center;
+    border:1px solid #ddd;
+}
+
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+/* Booking Form */
+form{
+    width:70%;
+    margin:40px auto;
+    background:white(35, 116, 123);
+    padding:40px;
+    border: radius 20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+form input,
+form select,
+form textarea{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+form button{
+    width:100%;
+    background:#0077b6;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+form button:hover{
+    background:#023e8a;
+}
+
+/* Reviews */
+.reviews{
+    padding:50px 20px;
+    text-align:center;
+}
+
+.review{
+    background:rgb(0, 247, 255);
+    padding:20px;
+    margin:20px auto;
+    max-width:700px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.review img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-top:15px;
+}
+
+/* Footer */
+footer{
+    background:#00b4d8;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+footer a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+}
+
+footer a:hover{
+    color:#ffd60a;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-content h1{
+        font-size:32px;
+    }
+
+    form{
+        width:90%;
+    }
+}
