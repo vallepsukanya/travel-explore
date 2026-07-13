@@ -198,7 +198,7 @@ tr:nth-child(even){
 form{
     width:70%;
     margin:40px auto;
-    background:white(35, 116, 123);
+    background:rgb(35, 116, 123);
     padding:40px;
     border: radius 20px;
     box-shadow:0 10px 20px rgba(0,0,0,0.15);
@@ -273,6 +273,25 @@ footer a:hover{
 
 /* Responsive */
 @media(max-width:768px){
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-content h1{
+        font-size:32px;
+    }
+
+    form{
+        width:90%;
+    }
+}
+@media(max-width:550px){
     header{
         flex-direction:column;
         gap:15px;
